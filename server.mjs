@@ -16,7 +16,7 @@ async function refreshAccessToken() {
     refresh_token: process.env.SALESFORCE_REFRESH_TOKEN,
   });
 
-  const res = await fetch("https://login.salesforce.com/services/oauth2/token", {
+  const res = await fetch("https://ukat.my.salesforce.com/services/oauth2/token", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: params.toString(),
